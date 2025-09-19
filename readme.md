@@ -66,8 +66,8 @@ If you have a `.p12` client certificate, you can export it as a combined PEM fil
 ## <a name="fetching-the-kml-file"></a>🌐 Fetching the KML File from the ATAK Server
 
 1. Log in to your ATAK web portal with your admin certificate.
-2. Navigate to the **Marti / Latest KML** endpoint.
-3. Copy the full HTTPS URL for the feed you want to monitor, e.g.:
+2. Navigate to the Situation Awareness KMLSA feed
+3. open up the file and grab the first HTTPS link in <a herf="abc...">
 
 ```text
 https://serverip:8446/Marti/LatestKML?cotType=a-f&secago=60
@@ -136,4 +136,5 @@ python app.py
 * Make sure the certificate has **access permissions** for the feed.
 * Ensure the KML URL is **exact**; even a minor change can result in `403 Forbidden`.
 * You can extend `EXPORT_LINKS` to fetch multiple feeds simultaneously.
+
 
