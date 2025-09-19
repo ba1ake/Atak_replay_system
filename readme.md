@@ -2,6 +2,12 @@
 
 This Python script allows you to fetch real-time KML data from an ATAK server, parse it, and save snapshots of user positions over time. It supports **client certificate authentication** and organizes the KML data in a human-readable log format.
 
+includes a basic Flask server which allows for the replay on files
+
+AI tools have been used in the creation of the following parts:
+readme.md, thats this right here
+replay.py
+
 ---
 
 ## 📄 Table of Contents
@@ -130,3 +136,4 @@ python app.py
 * Make sure the certificate has **access permissions** for the feed.
 * Ensure the KML URL is **exact**; even a minor change can result in `403 Forbidden`.
 * You can extend `EXPORT_LINKS` to fetch multiple feeds simultaneously.
+
